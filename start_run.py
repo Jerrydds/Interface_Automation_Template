@@ -1,6 +1,6 @@
 import unittest
 from tools.HTMLTestReportCN import HTMLTestRunner
-import time
+import time,os
 
 if __name__ == '__main__':
     # 加载当前目录
@@ -8,6 +8,8 @@ if __name__ == '__main__':
     # 加载当前目录下test开头的.py文件
     discover = unittest.defaultTestLoader.discover(case_dir, pattern='test*.py')
     # 定义报告目录
+    if not os.path.exists('./Reports/'):
+        os.makedirs('./Reports/')
     file_dir = './Reports/'
     # 定义报告名称格式
     now_time = time.strftime('%Y-%m-%d %H_%M_%S')
