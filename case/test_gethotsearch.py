@@ -8,8 +8,9 @@ class TestGetHotSearch(unittest.TestCase):
         self.run = RunTest(0)
 
     def test_001(self):
-        self.run.go_on_run(1)
-        # print("case执行完成")
+        expect, authentic = self.run.go_on_run(1)
+        self.assertIn(expect, authentic, '实际与期望结果不一致,测试不通过')
 
     def test_002(self):
-        self.run.go_on_run(2)
+        expect, authentic = self.run.go_on_run(2)
+        self.assertIn(expect, authentic, '实际与期望结果不一致,测试不通过')
