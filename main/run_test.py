@@ -62,3 +62,5 @@ class RunTest:
             else:
                 self.data.write_result(i, jres)
                 fail_count.append(i)
+                
+            return expect, jres
