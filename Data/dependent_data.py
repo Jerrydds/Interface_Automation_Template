@@ -1,6 +1,6 @@
-from data.get_data import GetData
-from tools.operation_excel import OperationExcel
-from base.runmethod import RunMethod
+from Data.get_data import GetData
+from Tools.operation_excel import OperationExcel
+from Base.runmethod import RunMethod
 from jsonpath_rw import *
 
 

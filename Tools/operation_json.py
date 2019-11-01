@@ -12,7 +12,7 @@ class OperationJson:
 
     # 获取json文件
     def read_data(self):
-        with open(root_path + '/datapool/user.json', 'r') as f:
+        with open(root_path + '/datapool/user.json', 'r', encoding='utf-8') as f:
             self.data = json.load(f)
             return self.data
 

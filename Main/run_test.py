@@ -4,10 +4,10 @@ current_directory = os.path.dirname(__file__)
 root_path = os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
 sys.path.append(root_path)
 
-from base.runmethod import RunMethod
-from data.dependent_data import DependentData
-from data.get_data import GetData
-from tools.commonutil import CommonUtil
+from Base.runmethod import RunMethod
+from Data.dependent_data import DependentData
+from Data.get_data import GetData
+from Tools.commonutil import CommonUtil
 import json
 
 
@@ -62,5 +62,6 @@ class RunTest:
             else:
                 self.data.write_result(i, jres)
                 fail_count.append(i)
-                
+
             return expect, jres
+        return str(self.sheet_id), str(self.sheet_id)

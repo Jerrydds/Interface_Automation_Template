@@ -1,7 +1,7 @@
-from tools.connect_db import OperationSql
-from tools.operation_excel import OperationExcel
-from tools.operation_json import OperationJson
-from data import data_config
+from Tools.connect_db import OperationSql
+from Tools.operation_excel import OperationExcel
+from Tools.operation_json import OperationJson
+from Data import data_config
 
 
 class GetData:

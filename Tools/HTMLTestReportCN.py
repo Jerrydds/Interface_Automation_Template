@@ -187,7 +187,7 @@ class Template_mixin(object):
 
     DEFAULT_TITLE = '单元测试报告'
     DEFAULT_DESCRIPTION = ''
-    DEFAULT_TESTER='自动化'
+    DEFAULT_TESTER='系统自动发送'
 
     # ------------------------------------------------------------------------
     # HTML Template

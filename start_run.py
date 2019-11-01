@@ -1,5 +1,5 @@
 import unittest
-from tools.HTMLTestReportCN import HTMLTestRunner
+from Tools.HTMLTestReportCN import HTMLTestRunner
 import time,os
 
 if __name__ == '__main__':
@@ -17,5 +17,5 @@ if __name__ == '__main__':
     file_name = file_dir + now_time + "Report.html"
     with open(file_name, "wb") as f:
         # 实例化HTMLTestRunenr对象，传入报告文件流f
-        runner = HTMLTestRunner(stream=f, title='XX接口测试报告', description="测试用例共计2条", tester="系统通知")
+        runner = HTMLTestRunner(stream=f, title='XX测试报告', description="测试用例共计X条", tester="系统通知")
         runner.run(discover)
