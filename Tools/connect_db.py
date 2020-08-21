@@ -23,7 +23,8 @@ class OperationMssql:
 
 if __name__ == '__main__':
     op_ql = OperationMssql()
-    print(op_ql.search_one("select * from TYQCustomLink where FRemarks ='被禁用'"))
+    # print(op_ql.search_one("select * from TYQCustomLink where FRemarks ='被禁用'"))
+    print(op_ql.search_all("select FPrimaryKeyId from TYQLink order by FPrimaryKeyId offset 0 rows FETCH NEXT 1000 rows only"))
 
 '''
 
