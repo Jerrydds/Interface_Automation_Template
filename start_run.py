@@ -4,7 +4,7 @@ import time,os
 
 if __name__ == '__main__':
     # 加载当前目录
-    case_dir = './case/'
+    case_dir = './Case/'
     # 加载当前目录下test开头的.py文件
     discover = unittest.defaultTestLoader.discover(case_dir, pattern='test*.py')
     # 定义报告目录

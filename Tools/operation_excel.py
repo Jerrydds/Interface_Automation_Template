@@ -12,7 +12,7 @@ class OperationExcel:
             self.file_name = file_name
             self.sheet_id = sheet_id
         else:
-            self.file_name = root_path + '/datapool/interface.xls'
+            self.file_name = root_path + '/Datapool/interface.xls'
             self.sheet_id = sheet_id
         self.data = self.get_data()
 
